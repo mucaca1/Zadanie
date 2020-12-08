@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.example.madam.ui.viewModels.RegistrationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration_title"
+            style="@style/H4RobotoFont"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/primary"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:shadowColor="@color/accent"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/userName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/type_your_nickname"
+            android:hint="@string/username"
+            style="@style/H2RobotoFont"
+            android:backgroundTint="@color/primary"
+            android:text="@={model.login}"
+            app:layout_constraintBottom_toTopOf="@+id/emailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="150dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:inputType="text"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:inputType="textEmailAddress"
+            android:contentDescription="@string/your_e_mail_address"
+            android:hint="@string/email"
+            style="@style/H2RobotoFont"
+            android:backgroundTint="@color/primary"
+            android:text="@={model.email}"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:contentDescription="@string/password"
+            android:hint="@string/password"
+            style="@style/H2RobotoFont"
+            android:backgroundTint="@color/primary"
+            android:text="@={model.password}"
+            app:layout_constraintBottom_toTopOf="@+id/retypePassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailAddress"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/retypePassword"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:inputType="textPassword"
+            android:contentDescription="@string/retype_password"
+            android:hint="@string/retype_password"
+            style="@style/H2RobotoFont"
+            android:backgroundTint="@color/primary"
+            android:text="@={model.retypePassword}"
+            app:layout_constraintBottom_toTopOf="@id/registrationButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/registrationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:onClick="@{() -> model.registration()}"
+            app:layout_constraintBottom_toTopOf="@+id/goToLoginFragmentButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/retypePassword" />
+
+        <TextView
+            android:id="@+id/goToLoginFragmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/go_to_login"
+            style="@style/H2RobotoFont"
+            android:textColor="@color/primary"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registrationButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="player_buttons_distance">40dp</dimen>
+    <dimen name="post_profile_pic_diameter">60dp</dimen>
+    <dimen name="play_pause_borders_diameter">90dp</dimen>
+    <dimen name="remove_button_size">40dp</dimen>
+    <dimen name="layout_margin">30dp</dimen>
+</resources>

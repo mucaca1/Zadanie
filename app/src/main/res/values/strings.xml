@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Madam</string>
+
+    <!-- Global -->
+    <string name="mantra">My dáme momentku</string>
+
+    <!-- Common -->
+    <string name="username">Username</string>
+    <string name="email">E-mail address</string>
+    <string name="password">Password</string>
+
+    <!-- Login -->
+    <string name="login">Login</string>
+    <string name="go_to_register"><u>Don\'t have an account yet? Create it</u></string>
+
+    <!-- Registration -->
+    <string name="retype_password">Retype password</string>
+    <string name="registration_title">Register and enjoy moments</string>
+    <string name="sign_up">Sign up</string>
+    <string name="go_to_login"><u>Do you already have an account? Login</u></string>
+
+    <!-- Profile -->
+    <string name="logout">Logout</string>
+    <string name="change_password">Change password</string>
+
+    <string name="owner_photo_desc">Post owner profile picture</string>
+    <string name="rewind_desc">Rewind 10 sec button</string>
+    <string name="forward_desc">Forward 10 sec button</string>
+    <string name="play_desc">Play button</string>
+    <string name="pause_desc">Pause button</string>
+    <string name="remove_post_button_description">Remove current post button</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="retype_new_password">Retype new password</string>
+    <string name="type_your_nickname">Type your nickname</string>
+    <string name="your_e_mail_address">Your e-mail address</string>
+</resources>

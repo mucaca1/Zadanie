@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "741950723434",
+    "firebase_url": "https://madam-6a867.firebaseio.com",
+    "project_id": "madam-6a867",
+    "storage_bucket": "madam-6a867.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741950723434:android:824d395aff9cb6dcda4113",
+        "android_client_info": {
+          "package_name": "com.example.madam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741950723434-gd8fpdgbfm8ikmidt9ragcjgt06jj5p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTUKL17UBuFkX-EvouwlohhchMhRuj1pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741950723434-gd8fpdgbfm8ikmidt9ragcjgt06jj5p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
